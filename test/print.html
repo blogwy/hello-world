@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://test.magnifisoftware.com/materialplan.html?mp_id=1513909707570651009 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>物料计划</title>    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link rel="icon" href="http://test.magnifisoftware.com/img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="./print_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./print_files/font-awesome.css">
+    <link href="./print_files/components.css" rel="stylesheet" type="text/css">
+    <link href="./print_files/manufacturedetail.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="print.css" media="all">
+    <style>
+      /*@import url("./print_files/bootstrap.css") print;*/
+      /*@import url("./print_files/font-awesome.css") print;*/
+      /*@import url("./print_files/manufacturedetail.css") print;*/
+      /*@import url("./print_files/components.css") print;*/
+      /*@media print{*/
+        /*h3{*/
+          /*color: #428bca!important;*/
+        /*}*/
+      /*}*/
+    </style>
+</head>
+<body>
+<div class="page-content-wrapper">
+    <div class="container page-content" style="margin-top: 1% !important;width: 80%;margin-left: 18%;padding-left: 0px !important;min-height:900px;">
+        <h3 class="page-title">
+            物料计划
+        </h3>
+        <!-- <hr/> -->
+        <div class="caption">
+            <span class="caption-subject font-green-sharp bold uppercase printcolor">
+                生产计划单号＃<span id="mpid">1513909707570651009</span>
+                 <button class="btn btn-danger pull-right print" style="right: 1.5%;" onclick="printpage();">打印本页</button>
+            </span>
+        </div>      
+        
+        <hr>
+        <div class="portlet-body">
+            <div class="tabbable" style="position: absolute; width: 98%;">                
+                <div class="tab-content" style="margin-top: 2%; margin-left: 10%;">
+                    <div class="tab-pane active" id="tab_1">
+                        <div class="row">                        	
+                            <div class="col-md-10 col-sm-10">
+                                <div class="portlet green-meadow box" id="border">
+                                    <div class="portlet-title">
+                                        <div class="caption captionprint">
+                                            物料计划内容
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="table-responsive matable">
+                                            <ul class="tabcon">
+                                                <li class="materialnumber"><b>物料编号</b></li>
+                                                <li class="materialname"><b>物料名称</b></li>
+                                                <li class="totaldosage"><b>用量</b></li>       
+                                            </ul>
+                                            <div id="maplantable_con">
+                                               
+                                           <ul class="tabcon bgg"><li class="materialnumber">AX0012</li><li class="materialname">红木</li><li class="totaldosage">16</li></ul><ul class="tabcon"><li class="materialnumber">AX0013</li><li class="materialname">杉木</li><li class="totaldosage">28</li></ul><ul class="tabcon bgg"><li class="materialnumber">MS3322</li><li class="materialname">原油</li><li class="totaldosage">18</li></ul><ul class="tabcon"><li class="materialnumber">AX0014</li><li class="materialname">樟木</li><li class="totaldosage">17</li></ul><ul class="tabcon bgg"><li class="materialnumber">AX0015</li><li class="materialname">香蕉</li><li class="totaldosage">11</li></ul><ul class="tabcon"><li class="materialnumber">AX0016</li><li class="materialname">红木</li><li class="totaldosage">13</li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./print_files/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="./print_files/bootstrap.min.js" type="text/javascript"></script>
+<script src="./print_files/bootstrap-paginator.js" type="text/javascript"></script>
+<script src="./print_files/metronic.js" type="text/javascript"></script>
+<script src="./print_files/layout.js" type="text/javascript"></script>
+<script src="./print_files/modal.js" type="text/javascript"></script>
+<script src="./print_files/contabs.js"></script>
+<script src="./print_files/common.js" type="text/javascript"></script>
+<script src="./print_files/materialplan.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        
+        MaterialPlan.init();
+    });
+    function printpage(){        
+        $(".print").css("display","none");
+        $(".page-content-wrapper .page-content").addClass("printpage");
+        $(".portlet.box.green-meadow").addClass("printtable");
+        $(".tab-content").addClass("printtabcontent");
+        window.print();
+        $(".print").css({"display":"block","margin-top":"-2.5%"});
+        $(".page-content-wrapper .page-content").removeClass("printpage");
+        $(".portlet.box.green-meadow").removeClass("printtable");
+        $(".tab-content").removeClass("printtabcontent");
+    }
+</script>
+
+</body></html>

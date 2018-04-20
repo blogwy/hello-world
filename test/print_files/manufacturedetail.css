@@ -1,0 +1,179 @@
+body{
+  /*font-family:宋体 !important;*/
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; 
+}
+h2{
+   color: #1b1a1a;
+    letter-spacing: 0;
+    text-shadow: -15px -1px 12px rgb(202, 201, 201), 
+                  13px 1px 10px #c5c4c4, 
+                  0px 0px 0px #bbbaba, 
+                  0px 0px 0px #bdbcbc, 
+                  0px 0px 0px #bfbcbc, 
+                  0px 0px 0px #b7b5b5, 
+                  0px 0px 0px #bfbebe, 
+                  0px 0px 12px #b7b3b3;
+ }
+label{
+  font-weight:500; 
+  font-family:宋体; 
+}
+.page-sidebar-wrapper {
+    position: absolute;
+    z-index: 99;
+}
+.toplabel{
+   margin-left: 5%;
+   font-size: 20px;
+}
+.blue-hoki{
+  margin-top: -20%;
+  position: relative;
+}
+.page-content-wrapper .page-content{
+  margin-top: -3% !important;
+}
+
+*{  
+   margin  : 0 auto;  
+   padding: 0px;  
+   list-style: none;  
+  } 
+.matable{  
+   width: 96%;  
+   border-top: solid #ddd 1px;  
+   border-left: 1px solid #ddd;  
+   display: table;   
+   margin:1% 0 2% 2%;
+   font-family: 宋体;
+   table-layout:fixed;
+   overflow: hidden !important; 
+   text-overflow: ellipsis;   
+   }
+.matable li{  
+   float: left;
+   padding: 3px;
+   font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+ } 
+ .manufactureid,.productNo,.productname,.manufacturequantity,.completedquantity,.productnumber,.quantity,.materialnumber,.materialname,.totaldosage{  
+   color: black;  
+   font-size: 12px;  
+   text-align: center;  
+   border-right: 2px solid #ddd;  
+   border-bottom: 2px solid #ddd;  
+   line-height: 26px;  
+   }
+.manufactureid{width: 25%;}
+.productNo{width: 22%;}      
+.productname{width: 23%;}  
+.manufacturequantity{width: 15%;}  
+.completedquantity{width: 15%;} 
+.tabcon{
+    width: 100%;
+    margin-left: 0;
+} 
+.tabcon b{
+  font-size: 14px;
+  font-weight: 600;
+}
+.productnumber{width: 10%;}
+.quantity{width: 12%;}
+.bgg li{background-color: rgba(238, 238, 238, 0.35);}
+.totalbottom{
+  width: 80%;
+  height: 8%;
+  margin-top: 2% !important;
+  margin-left: 8%;
+  padding: 2% 0 5% 0;
+}  
+.btn_save{
+  position: absolute;
+  right: 1.5%;
+  margin-top: -5%;
+}
+.addnote{
+    position: absolute;
+    margin-left: -8%;
+    margin-top: -6%;
+    width: 60%;
+}
+.note{
+  margin: 1% 0 0 -2% !important;
+  border-left-width: 0px !important;
+}
+input#note {
+    margin: -6% 0 0 13%;
+}
+.input-sm{
+  height: 26px !important;
+}
+.operator-modal {
+    font-weight: 200 !important;
+    font-family: 宋体 !important;
+    font-size: 20px;
+    margin-left: 1% !important;
+    margin-top: 2%;
+}
+.matable-modal{
+  width: 96%;  
+  border-top: solid #ddd 1px;  
+  border-left: 1px solid #ddd;  
+  display: table;   
+  margin:1% 0 2% 2%;
+  font-family: 宋体;
+  table-layout:fixed;
+  overflow: hidden !important; 
+  text-overflow: ellipsis;
+}
+.matable-modal li{  
+   float: left;
+   padding: 3px;
+   font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+ } 
+ .productnumber-modal,.productname-modal,.quantity-modal{  
+   color: black;  
+   font-size: 12px;  
+   text-align: center;  
+   border-right: 2px solid #ddd;  
+   border-bottom: 2px solid #ddd;  
+   line-height: 26px;  
+   }
+.tabcon-modal{
+    width: 100%;
+    margin-left: 0;
+} 
+.tabcon-modal b{
+  font-size: 14px;
+  font-weight: 600;
+}
+.modal-sm .modal-body{
+  height: 75px;
+}
+.materialnumber{
+  width: 30%;
+}
+.materialname{width: 45%;}
+.totaldosage{
+  width: 25%;
+}
+.printpage{
+	margin-left: 0% !important;
+	width: 100% !important;
+}
+.printtable{
+	border: none !important;
+}
+.printtabcontent{
+	margin-left: 0% !important;
+}
+@media (min-width: 992px){
+.page-content-wrapper .page-content {
+  margin-left: 16% !important;
+  position: absolute;
+}
+}
+
+

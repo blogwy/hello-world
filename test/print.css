@@ -1,0 +1,24 @@
+
+.printcolor{
+  font-size: 18px;
+  color: #f3c200!important;
+}
+.page-title{
+  color: #428bca!important;
+  font-weight: 800;
+}
+#mpid{
+  font-size: 18px;
+  color: #f3c200!important;
+}
+.portlet-title {
+  background-color: #1bbc9b!important;
+}
+
+#border {
+  border: 1px solid #1bbc9b!important;
+  border-top: none!important;
+}
+.captionprint{
+  color: #fff!important;
+}
